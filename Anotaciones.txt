@@ -27,3 +27,39 @@ CLASE QUE VIENE
                     ANIMACION CSS CUANDO ARRANQUE Y VUELVA A PAGINA ORIGINAL
                     
 
+NODEJS - ANGULAR 
+
+Bajar NodeJS: https://nodejs.org/es/
+
+Para actualizar la version:
+This works fine for me to update npm on Windows 7 x64:
+Windows start.
+All Programs.
+Node.js.
+Node.js command prompt (alternative click)
+Run as administrator. $ npm -g install npm.
+remove C:\Program Files\nodejs\npm.cmd the new npm will be at C:\Users\username\appdata\roaming\npm\npm.cmd.
+
+Angular
+https://cli.angular.io/
+Ejecutar una ventana de comandos desde donde quiero que tenga la carpeta. 
+npm install -g @angular/cli
+
+ir http://localhost:4200/
+
+https://dashboard.ionicframework.com/welcome
+jngraziano
+Gss$
+
+firebase
+https://firebase.google.com/?hl=es-419
+
+splash screen ionic
+
+
+instalo ionic
+instalo el splash screen (animacion) Nombre y division
+traer 5 aplicaciones minimo
+
+github del gordo pelotudo:
+https://github.com/juanm96
