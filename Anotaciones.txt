@@ -50,7 +50,7 @@ ir http://localhost:4200/
 https://dashboard.ionicframework.com/welcome
 jngraziano
 Gss$
-
+  
 firebase
 https://firebase.google.com/?hl=es-419
 
