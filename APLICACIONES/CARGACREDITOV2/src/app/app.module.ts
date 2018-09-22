@@ -33,7 +33,6 @@ export function provideSettings(storage: Storage) {
     option4: 'Hello'
   });
 }
-
 @NgModule({
   declarations: [
     MyApp
