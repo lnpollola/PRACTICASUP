@@ -1,15 +1,15 @@
 page-welcome {
   .splash-bg {
     position: relative;
-    background: url('../assets/img/splashbg.png') no-repeat transparent;
+    background: url('../../assets/img/splashbg.png') no-repeat transparent;
     background-size: cover;
     height: 45%;
     z-index: 1;
     background-repeat: repeat-x;
-    animation: animatedBackground 40s linear infinite;
+    animation: animacionFondo 40s linear infinite;
   }
 
-  @keyframes animatedBackground {
+  @keyframes animacionFondo {
     from { background-position: 0 0; }
     to { background-position: 100% 0; }
   }
