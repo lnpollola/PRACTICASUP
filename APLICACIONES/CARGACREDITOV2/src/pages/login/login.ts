@@ -4,6 +4,7 @@ import { IonicPage, NavController, ToastController } from 'ionic-angular';
 
 import { User } from '../../providers';
 import { MainPage } from '../';
+import { ContentPage } from '../content/content';
 
 @IonicPage()
 @Component({
@@ -35,9 +36,9 @@ export class LoginPage {
   // Attempt to login in through our User service
   doLogin() {
     this.user.login(this.account).subscribe((resp) => {
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(ContentPage);
     }, (err) => {
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(ContentPage);
       // Unable to log in
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,

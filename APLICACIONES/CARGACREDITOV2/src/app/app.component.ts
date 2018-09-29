@@ -5,6 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Config, Nav, Platform } from 'ionic-angular';
 
 import { FirstRunPage } from '../pages';
+import { ContentPage } from '../pages/content/content';
 import { Settings } from '../providers';
 
 @Component({

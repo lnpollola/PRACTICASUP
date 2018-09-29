@@ -1,13 +1,43 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Content
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<div id="fondo" class="base contenido">
+  <ion-header id="header">
+    <ion-navbar>
+      <ion-title>
+        Cargar crédito
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
 
-<ion-content padding>
-  <p>
-    This is a perfect starting point for a page with primarily text content. The body is padded nicely and ready for prose.
-  </p>
-</ion-content>
+  <ion-content padding>
+    <!-- <form id="formulario" (submit)="goScan()"> -->
+    <ion-list>
+
+      <ion-item id="item" style="text-align: center;">
+        <h2 large class="titulo" id="lbl_1" stacked color="dark">{{ 'CREDIT_LABEL' | translate }}</h2>
+        <br>
+        <h1 large class="titulo" id="lbl_2"> $ {{credito}}</h1>
+      </ion-item>
+      <div padding margin style="text-align: center; display: block;">
+        <button large margin padding id="btn_2" ion-button color="danger" round (click)="borrarCreditoUsuario()">
+          <ion-icon large name="trash"> &nbsp; {{ 'DELETE_BUTTON' | translate }}</ion-icon>
+        </button>
+        <button large margin padding id="btn_3" ion-button color="primary" round (click)="goScan(1)">
+          <ion-icon large name="barcode"> &nbsp; {{ 'VERIFY_BUTTON' | translate }}</ion-icon>
+        </button>
+        <button large margin padding id="btn_4" ion-button color="primary" round (click)="traerCodigos()">
+          <ion-icon large name="cloud-done"> &nbsp; {{ 'VIEW_ALL_BUTTON' | translate }}</ion-icon>
+        </button>
+      </div>
+
+      <div id="box" class="box"></div>
+
+    </ion-list>
+    <!-- </form> -->
+  </ion-content>
+  <ion-footer id="footer">
+    <div padding>
+      <button id="btn" ion-button color="secondary" large round block (click)="goScan()">
+        <ion-icon name="add-circle"> &nbsp; {{ 'SCAN_BUTTON' | translate }}</ion-icon>
+      </button>
+    </div>
+  </ion-footer>
+</div>
