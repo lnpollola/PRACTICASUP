@@ -47,7 +47,6 @@ export class WelcomePage {
     }, (err) => {
       this.navCtrl.push(MainPage);
       // Unable to log in
-      console.info("estoy en dologin error");
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,
         duration: 3000,
